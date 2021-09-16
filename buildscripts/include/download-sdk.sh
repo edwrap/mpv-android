@@ -19,7 +19,7 @@ if [ "$os" == "linux" ]; then
 			sudo pip3 install meson; }
 	fi
 
-	if ! javac -version &>/dev/null; then
+	if ! java -version &>/dev/null; then
 		echo "Error: missing Java Development Kit."
 		hash yum &>/dev/null && \
 			echo "Install it using e.g. sudo yum install java-latest-openjdk-devel"
